@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navBtn {
+        @apply h-7 cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+        display: none!important;
+    }
+
+    .btn {
+        @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
+    }
+
+    @media (min-width: 768px) {
+        .navBtn {
+            display: inline-flex!important;
+        }
+    }
+}
